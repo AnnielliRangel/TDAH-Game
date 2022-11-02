@@ -1,0 +1,43 @@
+.choice-container {
+    display: flex;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    font-size: 1.8rem;
+    border: 0.1rem solid #00ADB5;
+    background-color: #222831;
+}
+
+.choice-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+}
+
+.choice-prefix {
+    padding: 1.5rem 2.5rem;
+    background-color: #00ADB5;
+    color: #EEEEEE;
+}
+
+.choice-text {
+    padding: 1.5rem;
+}
+
+.choice-clicked {
+    background-color: #00ADB5;
+}
+
+.choice-clicked > p {
+    color: #393E46;
+}
+
+#alert {
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-top: 30px;
+}
+
+.show {
+    display: flex;
+}
