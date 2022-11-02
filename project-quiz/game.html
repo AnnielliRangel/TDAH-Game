@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Game - TDAH</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/game.css" />
+  </head>
+  <body>
+    <div class="container" id="home">
+      <div class="flex-center flex-column">
+        <h1>Quiz TDAH</h1>
+        <a class="btn" id="btntda">Teste de Défict de Atenção</a>
+        <a class="btn" id="btntdah">Teste de Hiperatividade</a>
+        <a class="btn" id="sobre">Sobre</a>
+      </div>
+    </div>
+
+    <div class="container hidden" id="game">
+      <div class="justify-center flex-column">
+        <h2 id="question">What is the answer to this questions?</h2>
+        <h3 id="example">Example</h3>
+        <div class="choice-container">
+          <p class="choice-prefix">A</p>
+          <p class="choice-text">Nunca</p>
+        </div>
+        <div class="choice-container">
+          <p class="choice-prefix">B</p>
+          <p class="choice-text">Quase Nunca</p>
+        </div>
+        <div class="choice-container">
+          <p class="choice-prefix">C</p>
+          <p class="choice-text">As Vezes</p>
+        </div>
+        <div class="choice-container">
+          <p class="choice-prefix">D</p>
+          <p class="choice-text">Quase Sempre</p>
+        </div>
+        <div class="choice-container">
+          <p class="choice-prefix">E</p>
+          <p class="choice-text">Sempre</p>
+        </div>
+        <div>
+          <p id="alert" class="justify-center"></p>
+        </div>
+      </div>
+    </div>
+    <div id="btnNext" class="flex-center flex-column hidden">
+      <a id="btn-next" class="btn" href="#">Avançar</a>
+    </div>
+
+    <div class="hidden container" id="resultado">
+      <div class="text-center justify-center flex-column">
+        <h1>Resultado</h1>
+        <h2 id="p-resultado"></h2>
+
+        <h3 class="flex-center flex-column">
+          Para mais informações e diagnóstico, procure um profissional médico
+          especializado (psiquiatra, neurologista, neuropediatra).
+        </h3>
+      </div>
+    </div>
+
+    <div class="hidden container flex-column flex-center" id="information">
+      <h2 class="text-justify">
+        Esse teste se baseia no Manual Diagnóstico e Estatístico de Transtornos
+        Mentais. DSM-5. Alinhado com a American Psychiatric Association (APA)
+      </h2>
+      <h3 class = "text-center">
+        A análise dos resultados é válida para pessoas com mais de 17 anos.
+      </h3>
+      <ul class = "text-info">
+        <li>
+          A característica essencial do transtorno de déficit de
+          atenção/hiperatividade é um padrão persistente de desatenção e/ou
+          hiperatividade-impulsividade que interfere no funcionamento ou no
+          desenvolvimento.
+        </li>
+        <li>
+          A desatenção manifesta-se comportamentalmente no TDAH como divagação
+          em tarefas, falta de persistência, dificuldade de manter o foco e
+          desorganização - e não constitui consequência de desafio ou falta de
+          compreensão
+        </li>
+        <li>
+          A hiperatividade refere-se a atividade motora excessiva (como uma
+          criança que corre por tudo) quando não apropriado ou remexer, batucar
+          ou conversar em excesso. Nos adultos, a hiperatividade pode se
+          manifestar como inquietude extrema ou esgotamento dos outros com sua
+          atividade
+        </li>
+        <li>
+          Manifestações do transtorno devem estar presentes em mais de um
+          ambiente (p. ex., em casa e na escola, no trabalho).
+        </li>
+      </ul>
+
+      <div id="btnVoltar" class="flex-center flex-column hidden">
+        <a id="btn-voltar" class="btn" href="./game.html">Voltar </a>
+      </div>
+    </div>
+
+    <script src="./js/Quiz.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
